@@ -1,15 +1,14 @@
-﻿using System.Collections.Generic;
+﻿using System;
 using UnityEngine;
 
 namespace Conduits.Core
 {
-    [CreateAssetMenu()]
-    public class Level : ScriptableObject  
+    [System.Serializable]
+    public struct Level
     {
-        // TODO: Figure out how to serialize
-        
+        [SerializeField]
         public Tile[,] Tiles;
-        public int[] Inventory;
-        // TODO: state
+        [SerializeField]
+        public int[] inventory;
     }
 }

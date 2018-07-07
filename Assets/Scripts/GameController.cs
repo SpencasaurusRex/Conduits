@@ -5,13 +5,17 @@ namespace Conduits.Core
     public class GameController : MonoBehaviour
     {
         public Level[] levels;
-        Grid grid;
+        public SpriteController spriteControllerPrefab;
+
+        GridController grid;
 
         void Awake()
         {
+            var sc = Instantiate<SpriteController>(spriteControllerPrefab);
             var level = levels[0];
-            grid = new Grid();
-            grid.LoadLevel(level);
+            grid = new GridController();
+            grid.LoadLevel(level, sc);
+
         }
 
         void FixedUpdate()

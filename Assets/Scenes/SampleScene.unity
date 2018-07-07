@@ -113,48 +113,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &446547431
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4963678185784530, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 374acd006e596734ca514c6c24ac7382, type: 2}
-  m_IsPrefabAsset: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -260,7 +218,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   levels:
-  - {fileID: 11400000, guid: 0cf70b97d3e071d449894d55e1a1e8cc, type: 2}
+  - inventory: 
+  spriteControllerPrefab: {fileID: 114951170665091038, guid: eef84a8a68e912d46ae1ee90cb033b42,
+    type: 2}
 --- !u!4 &1045304145
 Transform:
   m_ObjectHideFlags: 0
